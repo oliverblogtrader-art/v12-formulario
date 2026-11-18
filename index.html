@@ -109,7 +109,7 @@ lg.onsubmit=e=>{e.preventDefault();le.textContent="";fau.signInWithEmailAndPassw
 px.onclick=()=>{pn.classList.remove("on");clearInterval(poll);pf.style.display="none";unsub&&unsub();unsub=null;lst.textContent=""};
 lo.onclick=()=>{fau&&fau.signOut();px.click();lo.hidden=true};
 let tp=0,tm0;document.querySelector(".pill").addEventListener("click",()=>{tp++;clearTimeout(tm0);tm0=setTimeout(()=>tp=0,2500);if(tp>=5){tp=0;openPanel()}});
-function finish(){saveLead();const m=["Olá! Vim pelo formulário da V12.","Nome: "+NM,"Telefone: "+TL,...Q.map((q,n)=>q.k+": "+A[n])].join("\n");const u="https://wa.me/"+N+"?text="+encodeURIComponent(m);
+function finish(){saveLead();const m=sd()+", eu sou "+NM+", tenho interesse.";const u="https://wa.me/"+N+"?text="+encodeURIComponent(m);
 ov.classList.add("on");setTimeout(()=>{nd.style.transform="rotate(120deg)";arc.style.strokeDashoffset=0;const s=performance.now();(function f(t){const p=Math.min((t-s)/1700,1);cnt.textContent=Math.round(T*(1-Math.pow(1-p,3))).toLocaleString("pt-BR")+(p===1?"+":"");if(p<1)requestAnimationFrame(f)})(s)},100);
 setTimeout(()=>sec.textContent="1",1000);
 setTimeout(()=>{let w=null;try{w=window.open(u,"_blank")}catch(e){}if(!w){try{window.top.location.href=u}catch(e){location.href=u}}setTimeout(()=>{ov.classList.remove("on");nd.style.transform="rotate(-120deg)";arc.style.strokeDashoffset=377;sec.textContent="2";cnt.textContent="0";A.length=0;nm.value="";tl.value="";go(0)},2500)},2000)}
